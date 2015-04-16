@@ -1,0 +1,7 @@
+[Unit]
+Description=dockerise-nodeapp test
+Requires=docker.service
+After=docker.service
+
+[Service]
+ExecStart=/usr/bin/docker run -p 3000:8080 simonhoye/dockerise-nodeapp
